@@ -1,25 +1,89 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import AnimatedRoutes from "./components/AnimatedRoutes";
+import { DiJavascript1 } from "react-icons/di";
+import { FaReact, FaNodeJs, FaVuejs, FaHtml5 } from "react-icons/fa";
+import Social from "./components/social/Social";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="container">
+        <Social></Social>
+        <div className="wrap">
+          <svg className="svg">
+            <FaReact className="adjust-font-log react-logo" />
+          </svg>
+          <svg className="svg">
+            <DiJavascript1 className="adjust-font-log javascript-logo" />
+          </svg>
+          <svg className="svg">
+            <FaNodeJs className="adjust-font-log node" />
+          </svg>
+          <svg className="svg">
+            <DiJavascript1 className="adjust-font-log javascript-logo" />
+          </svg>
+          <svg className="svg">
+            <FaVuejs className="adjust-font-log vue" />
+          </svg>
+          <svg className="svg">
+            <FaHtml5 className="adjust-font-log html-logo" />
+          </svg>
+          <svg className="svg">
+            <FaReact className="adjust-font-log react-logo" />
+          </svg>
+          <svg className="svg">
+            <DiJavascript1 className="adjust-font-log javascript-logo" />
+          </svg>
+          <svg className="svg">
+            <FaNodeJs className="adjust-font-log node" />
+          </svg>
+          <svg className="svg">
+            <DiJavascript1 className="adjust-font-log javascript-logo" />
+          </svg>
+          <svg className="svg">
+            <FaVuejs className="adjust-font-log vue" />
+          </svg>
+          <svg className="svg">
+            <FaHtml5 className="adjust-font-log html-logo" />
+          </svg>
+          <svg className="svg">
+            <FaReact className="adjust-font-log react-logo" />
+          </svg>
+          <svg className="svg">
+            <DiJavascript1 className="adjust-font-log javascript-logo" />
+          </svg>
+          <svg className="svg">
+            <FaNodeJs className="adjust-font-log node" />
+          </svg>
+          <svg className="svg">
+            <DiJavascript1 className="adjust-font-log javascript-logo" />
+          </svg>
+          <svg className="svg">
+            <FaVuejs className="adjust-font-log vue" />
+          </svg>
+          <svg className="svg">
+            <FaHtml5 className="adjust-font-log html-logo" />
+          </svg>
+          <svg className="svg">
+            <FaReact className="adjust-font-log react-logo" />
+          </svg>
+          <svg className="svg">
+            <DiJavascript1 className="adjust-font-log javascript-logo" />
+          </svg>
+          <svg className="svg">
+            <FaNodeJs className="adjust-font-log node" />
+          </svg>
+          <svg className="svg">
+            <DiJavascript1 className="adjust-font-log javascript-logo" />
+          </svg>
+          <svg className="svg">
+            <FaVuejs className="adjust-font-log vue" />
+          </svg>
+          <svg className="svg">
+            <FaHtml5 className="adjust-font-log html-logo" />
+          </svg>
+        </div>
+        <AnimatedRoutes></AnimatedRoutes>
+      </div>
     </div>
   );
-}
-
+};
 export default App;
