@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import headerImg from "../../assets/img/header-img.svg";
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -9,7 +9,7 @@ const Banner = () => {
   const [delta, setDelta] = useState(100);
   const [index, setIndex] = useState(1);
   const toRotate = ["am a Web Developer", "love making websites"];
-  const period = 2000;
+  const location = useLocation();
   const navigate = useNavigate();
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -20,7 +20,11 @@ const Banner = () => {
       clearInterval(ticker);
     };
   }, [text]);
-
+  useEffect(() => {
+    if (location.pathname === "/") {
+      document.title = "V VHoang";
+    }
+  }, [location.pathname]);
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
