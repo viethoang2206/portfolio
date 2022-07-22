@@ -298,7 +298,7 @@ body {
                         top: 0;
                         left: 0;
                         content: "";
-                       
+                        z-index: -1;
                         background-color: rgba(248, 247, 247, 0.4);
                         animation: slideLeftRight 0.3s linear forwards;
                         width: 0;
